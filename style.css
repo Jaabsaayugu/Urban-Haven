@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* html {
+  font-family: var(--primary-font);
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  
+}
+
+root{
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Great Vibes", cursive;
+    --inter-font: "Inter", sans-serif;
+    --poppins-font: "Poppins", sans-serif;
+    --roboto-font: "Roboto", sans-serif;
+    --lato-font: "Lato", sans-serif;
+    --montserrat: "Montserrat", sans-serif;
+    --color-white: #fff;
+    --color-white-light: #f8f9fa;
+    --color-white-lighter: #f7f7f7;
+    --color-grey: #d8dbdd;
+    --color-grey-dark: #797877;
+    --color-black-main: #000000;
+    --color-black-light: #262626;
+    --accent: #27AE60;
+    --highlight: #F39C12;
+    --secondary-color: #3498DB;
+    --background: #F9F9F9;
+    --text: #333333;
+}
+
+.header{
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+  top: 0;
+  z-index: 1;
+}
+
+
+.header-navigation{
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 .5rem;
+  display: flex;
+}
+
+.header-logo h1 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.header-advocacy-tagline {
+  font-size: 1.2rem;
+  color: red;
+  font-family:"Great Vibes", cursive;
+}
+
+.header-nav-list {
+   list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.header-nav-list-item a{
+text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  }
+
+  .header-nav-list-item:hover {
+    background-color:#F39C12;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 15%;
+    padding: 0 .2rem;
+  }
+
+  .header-nav-list-item-booking{
+    border-top: none;
+  }
+
+  .header-nav-list-item-booking{
+  background-color: #F39C12;
+  color: #ffffff;
+  padding: .6rem 1.6rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.header-nav-list-item-booking:hover {
+  background-color: #219150;
+}
