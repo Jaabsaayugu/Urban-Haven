@@ -49,7 +49,7 @@ root{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  min-width: 200vh;
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -211,21 +211,21 @@ root{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .hero-search-form input[type="search"] {
-  padding: 10px;
+  padding: 1rem;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
   width: 60%;
-  max-width: 400px;
+  min-width: 100vh;
   background-color: beige;
 }
 
 .hero-search-form button {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   font-size: 1rem;
   background-color: #27ae60;
   color: #fff;
@@ -291,7 +291,7 @@ root{
 
   .hero-search-form {
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     font-size: 4rem;
   }
 
@@ -340,11 +340,12 @@ root{
 .apartment-types-container {
  display: flex;
   gap: 1rem;
-  padding: 3% 0;
+  padding: 2rem 0;
   background-color: #d8dbdd;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 200vh;
   
 }
 
@@ -396,21 +397,21 @@ root{
 }
 
 .availables {
-  padding: 60px 20px;
+  padding: 6rem 2rem;
   background-color: #f9f9f9;
   text-align: center;
 }
 
 .availables-title h2 {
   font-size: 4rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #2c3e50;
 }
 
 .availables-title h3 {
   font-family: "great vibes", cursive;
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #F39C12;
 }
 
@@ -418,108 +419,84 @@ root{
   font-size: 1.1rem;
   color: #2c3e50;
   font-weight: 700;
-  max-width: 600px;
-  margin: 0 auto 40px;
+  min-width: 60vh;
+  margin: 0 auto 4rem;
 }
 
 .availables-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  gap: 3rem;
+  min-width: 20rem;
   margin: 0 auto;
 }
 
 
   .availables-card-wifi {
   background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)),url(/Images/freeWifi.png);
-  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: .8rem;
+  padding: 2rem;
   }
   .availables-card-parking {
   background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),url(/Images/car\ park.png);
-  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  
+  border-radius: 8rem;
+  padding: 2rem;
   }
   .availables-card-laundry {
   background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)),url(/Images/laundry.png);
-  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 8rem;
+  padding: 2rem;
+  
   }
   .availables-card-gym {
   background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)),url(/Images/gym.png);
-  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: .8rem;
+  padding: 2rem;
   }
   .availables-card-swimming-pool {
   background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)),url(/Images/Swimming-Pool.png);
-  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: .8rem;
+  padding: 2rem;
   }
   .availables-card-elevator {
   background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)),url(/Images/elevator.png);
-  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 8rem;
+  padding: 2rem;
   }
   .availables-card-water {
   background-image: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .9)),url(/Images/water.png);
-  background-color: #110202;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 8rem;
+  padding: 2rem;
 }
 
 .availables-card-theater {
   background-image: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .7)),url(/Images/community\ theater.png);
-  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: .8rem;
+  padding: 2rem;
 }
 
 .availables-card:hover {
@@ -530,7 +507,7 @@ root{
 
 .availables-card-elevator h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #F39C12;
 }
 
@@ -541,7 +518,7 @@ root{
 
 .availables-card-wifi h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #F39C12;
 }
 
@@ -574,7 +551,7 @@ root{
 
 .availables-card-swimming-pool h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #F39C12;
 }
 
@@ -585,7 +562,7 @@ root{
 
 .availables-card-parking h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #F39C12;
 }
 
@@ -596,7 +573,7 @@ root{
 
 .availables-card-laundry h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #F39C12;
 }
 
@@ -607,7 +584,7 @@ root{
 
 .availables-card-gym h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #F39C12;
 }
 
@@ -616,4 +593,155 @@ root{
   color: #f6f9f9;
 }
 
+.contact {
+  padding: 6rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
+.contact-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.contact-title p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin: 0 auto 4rem;
+  font-weight: 700;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  min-width: 200vh;
+  margin: 0 auto;
+  background-image: url(/Images/hero.png);
+}
+
+.contact-info, .contact-form {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: .8rem;
+  box-shadow: 0 .6rem .8rem rgba(0, 0, 0, 0.1);
+}
+
+.contact-information, .contact-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #F39C12;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.contact-form input .contact-form textarea {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: .1rem solid #ccc;
+  border-radius: .4rem;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 1.2rem;
+  background-color: #2c3e50;
+  color: #ffffff;
+  border: none;
+  border-radius: .4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #8d9eb0;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 4rem 2rem;
+  font-family: var(--lato-font);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 200vh;
+  margin: 0 auto;
+}
+
+.footer-container > div {
+  display: flex;
+  flex-direction:column ; 
+  margin: 1rem;
+}
+
+.footer-about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links h4,
+.footer-contacts h4, {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: .8rem;
+}
+
+.footer-links ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-contacts p {
+  margin: .5rem 0;
+}
+
+.footer-socials {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: #f6f9f9;
+}
+
+.footer-socials a {
+  color: #f6f9f9;
+  margin-right: 1rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #F39C12;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
