@@ -18,9 +18,7 @@ body{
 root{
     --primary-font: "Open Sans", sans-serif;
     --secondary-font: "Great Vibes", cursive;
-    --inter-font: "Inter", sans-serif;
     --poppins-font: "Poppins", sans-serif;
-    --roboto-font: "Roboto", sans-serif;
     --lato-font: "Lato", sans-serif;
     --montserrat: "Montserrat", sans-serif;
     --color-white: #fff;
@@ -66,11 +64,12 @@ root{
   font-size: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: #2c3e50;
 }
 
 .header-logo h1 {
   font-size: 1.5rem;
+  color: #2c3e50;
   color: var(--secondary-color);
   text-decoration: none;
 }
@@ -136,11 +135,21 @@ root{
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
+
+@media screen and  (max-width: 700px)
+
 .header-nav-list-item-booking:hover {
   background-color: #219150;
 }
 
-@media screen and  (max-width: 700px)
+@media screen and  (max-width: 420px){
+  .header-cta-btn{
+    justify-content: center;
+
+    display: none;
+  }
+}
+
 
 
   .header-navigation {
@@ -212,6 +221,7 @@ root{
   border-radius: 5px;
   width: 60%;
   max-width: 400px;
+  background-color: beige;
 }
 
 .hero-search-form button {
@@ -265,3 +275,345 @@ root{
   font-weight: 600;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .hero-title h1 {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+
+  .hero-title p {
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-search-form {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 4rem;
+  }
+
+  .hero-search-form input[type="search"] {
+    width: 100%;
+  }
+
+  .hero-search-form button {
+    width: 100%;
+  }
+}
+
+
+.apartment-types-title{
+  padding: 10rem 5rem;
+  text-align: center;
+}
+
+.apartment-types-title h2{
+  text-align: center;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 800;
+  font-family: "Lato", sans-serif;
+}
+
+.apartment-types-title h3{
+  color: #2c3e50;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  padding: 2rem;
+}
+
+.apartment-types-title span{
+  font-size: 2rem;
+  font-family:"Great Vibes", cursive;
+  font-weight: bold;
+  color: #F39C12;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+  
+
+.apartment-types-container {
+ display: flex;
+  gap: 1rem;
+  padding: 3% 0;
+  background-color: #d8dbdd;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.apartment-types-card-item{
+  margin: 4rem;
+  width: 18rem;
+  height: 18rem; 
+  display: grid;
+  gap: 1.5rem;
+  padding: .5rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.apartment-types-card-item img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 12%;
+}
+
+.apartment-types-card-item:hover{
+  background-color: #e5e7ad;
+  border-radius: 20%;
+}
+
+.room-details{
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.room-description{
+  color: #F39C12;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.apartment-types-price{
+  color: darkgreen;
+  background-color: beige;
+  padding: 0 .5rem;
+  font-weight: 700;
+}
+
+.apartment-types-price:hover{
+  background-color: #d3f4a3;
+  border-radius: 15%;
+}
+
+.availables {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.availables-title h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.availables-title h3 {
+  font-family: "great vibes", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-title p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: 700;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.availables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+  .availables-card-wifi {
+  background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)),url(/Images/freeWifi.png);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  }
+  .availables-card-parking {
+  background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),url(/Images/car\ park.png);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  
+  }
+  .availables-card-laundry {
+  background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)),url(/Images/laundry.png);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  }
+  .availables-card-gym {
+  background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)),url(/Images/gym.png);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  }
+  .availables-card-swimming-pool {
+  background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)),url(/Images/Swimming-Pool.png);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  }
+  .availables-card-elevator {
+  background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)),url(/Images/elevator.png);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  }
+  .availables-card-water {
+  background-image: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .9)),url(/Images/water.png);
+  background-color: #110202;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.availables-card-theater {
+  background-image: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .7)),url(/Images/community\ theater.png);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.availables-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.availables-card-elevator h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-card-elevator p {
+  font-size: 0.95rem;
+  color: #f6f9f9;
+}
+
+.availables-card-wifi h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-card-wifi p {
+  font-size: 0.95rem;
+  color: #f6f9f9;
+}
+
+.availables-card-water h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-card-water p {
+  font-size: 0.95rem;
+  color: #f6f9f9;
+}
+
+.availables-card-theater h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-card-theater p {
+  font-size: 0.95rem;
+  color: #f6f9f9;
+}
+
+.availables-card-swimming-pool h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-card-parking p {
+  font-size: 0.95rem;
+  color: #f6f9f9;
+}
+
+.availables-card-parking h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-card-swimming-pool p {
+  font-size: 0.95rem;
+  color: #f6f9f9;
+}
+
+.availables-card-laundry h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-card-laundry p {
+  font-size: 0.95rem;
+  color: #f6f9f9;
+}
+
+.availables-card-gym h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #F39C12;
+}
+
+.availables-card-gym p {
+  font-size: 0.95rem;
+  color: #f6f9f9;
+}
+
+
