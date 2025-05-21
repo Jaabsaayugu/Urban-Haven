@@ -423,11 +423,11 @@ root{
   margin: 0 auto 4rem;
 }
 
-.availables-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3rem;
-  min-width: 20rem;
+.availables-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 15rem;
   margin: 0 auto;
 }
 
