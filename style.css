@@ -423,12 +423,12 @@ root{
   margin: 0 auto 4rem;
 }
 
-.availables-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  min-width: 15rem;
-  margin: 0 auto;
+.availables-grid{
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 2rem;
+grid-row-gap: 2rem;
 }
 
 
@@ -595,7 +595,7 @@ root{
 
 .contact {
   padding: 6rem 2rem;
-  background-color: #f9f9f9;
+  background-color: #7f8c8d;
   text-align: center;
 }
 
